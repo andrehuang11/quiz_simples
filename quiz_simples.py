@@ -33,13 +33,13 @@ def main():
 
     #loop que continua perguntando até a obter uma resposta válida
     while True:
-        jogando = input("Quer jogar um quiz? ")
-        if jogando.lower() not in sim_nao:
+        jogando = input("Quer jogar um quiz? ").lower()
+        if jogando not in sim_nao:
             print("DIGITE UMA RESPOSTA VÁLIDA: SIM OU NÃO?")
         else:
             break
     #se a resposta for nao o programa fecha
-    if jogando.lower() in nao:
+    if jogando in nao:
         print("Ok, até mais!")
         return
 
